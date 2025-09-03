@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- Deklarasi HTML5, memberi tahu browser jenis dokumen -->
+<html lang="en"> <!-- Elemen utama HTML, dengan bahasa dokumen = Inggris -->
+<head> <!-- Bagian kepala, berisi informasi halaman -->
+
+  <meta charset="UTF-8"> <!-- Mengatur encoding agar semua karakter ditampilkan dengan benar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Supaya tampilan responsif di HP dan layar kecil -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> <!-- Ikon kecil yang muncul di tab browser -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"> <!-- Mengambil font 'Outfit' dari Google Fonts -->
+  <title>Frontend Mentor | QR code component</title> <!-- Judul halaman yang muncul di tab browser -->
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; } /* Teks kecil dan rata tengah untuk catatan sumber */
+    .attribution a { color: hsl(228, 45%, 44%); } /* Warna link dalam attribution */
+
+    *{
+      box-sizing: border-box; /* Supaya padding & border ikut dihitung dalam ukuran elemen */
+      margin: 0; /* Hilangkan margin default */
+      padding: 0; /* Hilangkan padding default */
+    }
+
+    html, body {
+      height: 100%; /* Tinggi penuh mengikuti layar */
+    }
+
+    body {
+      display: flex; /* Aktifkan flexbox */
+      flex-direction: column; /* Susunan elemen ke bawah */
+      justify-content: center; /* Isi diposisikan ke tengah secara vertikal */
+      align-items: center; /* Isi diposisikan ke tengah secara horizontal */
+      background-color: hsl(212, 45%, 89%); /* Warna latar belakang biru muda */
+      min-height: 100vh; /* Tinggi minimum sama dengan tinggi layar */
+    }
+
+    .box {
+      width: 300px; /* Lebar kotak utama */
+      background-color: white; /* Latar kotak putih */
+      border-radius: 15px; /* Sudut kotak membulat */
+      padding: 20px; /* Jarak isi dengan tepi kotak */
+    }
+
+    img {
+      width: 100%; /* Gambar menyesuaikan lebar kotak */
+      height: auto; /* Tinggi otomatis agar proporsi tidak rusak */
+      border-radius: 15px; /* Sudut gambar ikut membulat */
+    }
+
+    .captions {
+      text-align: center; /* Semua teks rata tengah */
+      padding: 15px; /* Tambah jarak dalam */
+      font-family: 'Outfit', sans-serif; /* Gunakan font Outfit, jika gagal fallback ke sans-serif */
+    }
+
+    .capt1 {
+      font-weight: bold; /* Teks dibuat tebal */
+      margin-bottom: 15px; /* Tambah jarak bawah */
+    }
+
+    .capt2 {
+      color: hsl(216, 15%, 48%); /* Teks abu-abu untuk deskripsi */
+    }
+  </style>
+</head>
+
+<body> <!-- Bagian isi utama halaman -->
+
+  <div class="box"> <!-- Kotak utama untuk QR code dan teks -->
+    <img src="./images/image-qr-code.png"></img> <!-- Menampilkan gambar QR code -->
+    <div class="captions"> <!-- Bagian teks di bawah QR -->
+      <p class="capt1">Improve your front-end skills by building projects</p> <!-- Judul teks utama -->
+      <p class="capt2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p> <!-- Teks deskripsi -->
+    </div>
+  </div>
+
+  <div class="attribution"> <!-- Bagian catatan sumber di bawah -->
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <!-- Link ke Frontend Mentor -->
+    Coded by <a href="#">Chiyek27</a>. <!-- Nama pembuat halaman -->
+  </div>
+
+</body>
+</html> <!-- Penutup dokumen HTML -->
